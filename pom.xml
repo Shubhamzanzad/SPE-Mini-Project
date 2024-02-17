@@ -11,8 +11,8 @@
     <groupId>com.example</groupId>
     <artifactId>scientificCalculator</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>scientificCalculator</name>
-    <description>scientificCalculator</description>
+    <name>com.example.scientificcalculator.scientificCalculator</name>
+    <description>com.example.scientificcalculator.scientificCalculator</description>
     <properties>
         <java.version>17</java.version>
     </properties>

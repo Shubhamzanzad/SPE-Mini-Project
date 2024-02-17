@@ -1,12 +1,11 @@
 # Use Ubuntu Image
-FROM ubuntu:latest
+FROM eclipse-temurin:17-jdk-jammy
 # Set working directory
 WORKDIR /app
-# update package list anf install java
-RUN apt-get update && \
-apt-get install -y openjdk-17-jdk
 
-COPY . /app
-RUN javac scientificCalculator.java
+COPY .mvn/ .mvn
+COPY mvnw pom.xml ./
 
-CMD ["java","scientificCalculator" ]
+COPY src ./src
+
+CMD ["./mvnw", "spring-boot:run"]
