@@ -2,7 +2,7 @@ pipeline {
     agent any
     environment {
         DOCKER_IMAGE_NAME = 'CALC'
-        GITHUB_REPO_URL = 'https://github.com/Shubhamzanzad/spe_mini_project.git'
+        GITHUB_REPO_URL = 'https://github.com/Shubhamzanzad/SPE-Mini-Project.git'
         PATH = ""
     }
 
@@ -25,8 +25,13 @@ pipeline {
                 }
         stage('Run Unit Test') {
             steps {
-                dir('SPE_MINI') {
+                script {
                     sh './mvnw test'
+                }
+                post{
+                    always {
+                        junit '**/target/surefire-reports/TEST-*.xml'
+                    }
                 }
             }
         }
