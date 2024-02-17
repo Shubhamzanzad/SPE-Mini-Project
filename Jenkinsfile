@@ -28,7 +28,7 @@ pipeline {
                 script {
                     sh './mvnw test'
                 }
-                post{
+                post {
                     always {
                         junit '**/target/surefire-reports/TEST-*.xml'
                     }
