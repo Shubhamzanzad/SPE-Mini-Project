@@ -1,5 +1,5 @@
 package com.example.scientificcalculator;
-
+// sample
 import java.util.Scanner;
 
 public class scientificCalculator {
