@@ -18,7 +18,7 @@ public class scientificCalculator {
             System.out.println("3. Natural logarithm (ln)");
             System.out.println("4. Power function (x^y)");
             System.out.println("5. Exit");
-            System.out.print("Enter your choice (1-5): ");
+            System.out.print("Enter your choice between (1-5): ");
             int choice = scanner.nextInt();
 
             double num, result;
