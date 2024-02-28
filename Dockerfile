@@ -1,6 +1,4 @@
-# Use Ubuntu Image
 FROM eclipse-temurin:17-jdk-jammy
-# Set working directory
 WORKDIR /app
 
 COPY .mvn/ .mvn

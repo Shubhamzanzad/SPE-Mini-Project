@@ -1,4 +1,5 @@
 package com.example.scientificcalculator;
+
 // sample
 import java.util.Scanner;
 
@@ -18,29 +19,29 @@ public class scientificCalculator {
             System.out.println("3. Natural logarithm (ln)");
             System.out.println("4. Power function (x^y)");
             System.out.println("5. Exit");
-            System.out.print("Enter your choice between (1-5): ");
+            System.out.print("\nEnter your choice between (1-5): ");
             int choice = scanner.nextInt();
 
             double num, result;
             switch (choice) {
                 case 1:
-                    System.out.print("Enter a number to find its square root: ");
+                    System.out.print("\nEnter a number to find its square root: ");
                     num = scanner.nextDouble();
                     squareRoot(num);
                     break;
                 case 2:
-                    System.out.print("Enter a number to find its factorial: ");
+                    System.out.print("\nEnter a number to find its factorial: ");
                     num = scanner.nextDouble();
                     result = factorial((int) num);
                     System.out.println("Factorial of " + num + " is " + result);
                     break;
                 case 3:
-                    System.out.print("Enter a number to find its natural logarithm: ");
+                    System.out.print("\nEnter a number to find its natural logarithm: ");
                     num = scanner.nextDouble();
                     naturalLogarithm(num);
                     break;
                 case 4:
-                    System.out.print("Enter the base: ");
+                    System.out.print("\nEnter the base: ");
                     num = scanner.nextDouble();
                     System.out.print("Enter the exponent: ");
                     double exponent = scanner.nextDouble();
@@ -50,7 +51,7 @@ public class scientificCalculator {
                     running = false;
                     break;
                 default:
-                    System.out.println("Invalid choice!");
+                    System.out.println("\nInvalid choice!");
                     break;
             }
         }
